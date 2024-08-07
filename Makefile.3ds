@@ -37,13 +37,13 @@ SOURCES		:=	iniparser/src src src/map src/object src/renderer
 INCLUDES	:=  iniparser/src src src/map src/object src/renderer include
 ROMFS		:=	3ds/romfs
 #---------------------------------------------------------------------------------
-APP_VER						:= 0001
+APP_VER						:= 1000
 APP_TITLE					:= Rlone
 APP_DESCRIPTION				:= Rlone A Rouge Clone for Nintendo 3DS
 APP_AUTHOR					:= RetroGamer02
 PRODUCT_CODE				:= CTR-RLO
 
-#BANNER_AUDIO				:= rsrc/raptor3dsbanner.wav
+BANNER_AUDIO				:= 3ds/aud/death.wav
 BANNER_IMAGE				:= 3ds/banner.png
 ICON        				:= 3ds/icon0.png
 
