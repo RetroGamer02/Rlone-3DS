@@ -1,0 +1,32 @@
+Building Rlone: Unix
+====================
+Once dependencies and headers have been installed, Rlone can be built with
+a simple "make". The following is a list of Makefile commands:
+ * make run     = Compiles and runs the game.
+ * make install = Compiles and runs the games installer.
+ * make dist    = Compiles and packages the resulting build/, and source code.
+ * make clean   = Cleans up all build artifacts, including build/ and dist/.
+
+The following are the Makefile defines that can be used:
+ * make DEBUG=DEBUG   = Builds in debug mode, which increases stdout logging.
+ * make O=<0,1,2,3,z> = Sets the optimization level, default is 3.
+ * make BUILDDIR=path = Sets the output directory.
+ * make DISTDIR=path  = Sets the distribution directory.
+
+Building Rlone: Windows
+=======================
+Building Rlone on Windows is not nearly as streamlined as on *nix operating
+systems, so some manual copying and project file changes will be required.
+
+Before building Rlone, ensure you have downloaded the development files for
+SDL2, SDL_image, and SDL_mixer.
+
+This source package ships with a "windows/" directory, which contains a VS2022
+solution file and project file. Once open in Visual Studio, you must change
+the external include directories, and library directories, to point to where
+you have saved the SDL2 development files. After this, you should be able to
+build Rlone in debug or release modes.
+
+Before you can run Rlone, however, you must also copy the appropriate SDL2, 
+SDL_image, and SDL_mixer DLLs to the output directory for the game to launch.
+After this has been done, you should be good to go!

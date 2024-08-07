@@ -1,0 +1,14 @@
+*.a
+*.o
+build/
+dist/
+
+*.swp
+*.swo
+
+.vs/
+Debug/
+Release/
+x64/
+
+vita/build/

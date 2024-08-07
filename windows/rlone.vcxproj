@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\audio.h" />
+    <ClInclude Include="..\include\config.h" />
+    <ClInclude Include="..\include\input.h" />
+    <ClInclude Include="..\include\log.h" />
+    <ClInclude Include="..\include\map.h" />
+    <ClInclude Include="..\include\map_debug.h" />
+    <ClInclude Include="..\include\map_default.h" />
+    <ClInclude Include="..\include\map_gen.h" />
+    <ClInclude Include="..\include\map_type.h" />
+    <ClInclude Include="..\include\object.h" />
+    <ClInclude Include="..\include\object_armor.h" />
+    <ClInclude Include="..\include\object_arrows.h" />
+    <ClInclude Include="..\include\object_bow.h" />
+    <ClInclude Include="..\include\object_chest.h" />
+    <ClInclude Include="..\include\object_column.h" />
+    <ClInclude Include="..\include\object_door.h" />
+    <ClInclude Include="..\include\object_goblin.h" />
+    <ClInclude Include="..\include\object_gold.h" />
+    <ClInclude Include="..\include\object_health_potion.h" />
+    <ClInclude Include="..\include\object_inspecter.h" />
+    <ClInclude Include="..\include\object_loot.h" />
+    <ClInclude Include="..\include\object_loot_chest.h" />
+    <ClInclude Include="..\include\object_manager.h" />
+    <ClInclude Include="..\include\object_mob.h" />
+    <ClInclude Include="..\include\object_npc.h" />
+    <ClInclude Include="..\include\object_player.h" />
+    <ClInclude Include="..\include\object_projectile.h" />
+    <ClInclude Include="..\include\object_projectile_arrow.h" />
+    <ClInclude Include="..\include\object_slash.h" />
+    <ClInclude Include="..\include\object_stairs.h" />
+    <ClInclude Include="..\include\object_starter_chest.h" />
+    <ClInclude Include="..\include\object_statue.h" />
+    <ClInclude Include="..\include\object_sword.h" />
+    <ClInclude Include="..\include\object_ticker.h" />
+    <ClInclude Include="..\include\object_zombie.h" />
+    <ClInclude Include="..\include\renderer.h" />
+    <ClInclude Include="..\include\renderer_dialog.h" />
+    <ClInclude Include="..\include\renderer_entity.h" />
+    <ClInclude Include="..\include\renderer_util.h" />
+    <ClInclude Include="..\include\util.h" />
+    <ClInclude Include="..\iniparser\src\dictionary.h" />
+    <ClInclude Include="..\iniparser\src\iniparser.h" />
+    <ClInclude Include="libraries.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="unistd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\iniparser\src\dictionary.c" />
+    <ClCompile Include="..\iniparser\src\iniparser.c" />
+    <ClCompile Include="..\src\audio.c" />
+    <ClCompile Include="..\src\config.c" />
+    <ClCompile Include="..\src\input.c" />
+    <ClCompile Include="..\src\log.c" />
+    <ClCompile Include="..\src\map\debug.c" />
+    <ClCompile Include="..\src\map\default.c" />
+    <ClCompile Include="..\src\map\gen.c" />
+    <ClCompile Include="..\src\map\map.c" />
+    <ClCompile Include="..\src\object\armor.c" />
+    <ClCompile Include="..\src\object\arrows.c" />
+    <ClCompile Include="..\src\object\bow.c" />
+    <ClCompile Include="..\src\object\chest.c" />
+    <ClCompile Include="..\src\object\column.c" />
+    <ClCompile Include="..\src\object\door.c" />
+    <ClCompile Include="..\src\object\goblin.c" />
+    <ClCompile Include="..\src\object\gold.c" />
+    <ClCompile Include="..\src\object\health_potion.c" />
+    <ClCompile Include="..\src\object\inspecter.c" />
+    <ClCompile Include="..\src\object\loot.c" />
+    <ClCompile Include="..\src\object\loot_chest.c" />
+    <ClCompile Include="..\src\object\manager.c" />
+    <ClCompile Include="..\src\object\mob.c" />
+    <ClCompile Include="..\src\object\npc.c" />
+    <ClCompile Include="..\src\object\object.c" />
+    <ClCompile Include="..\src\object\player.c" />
+    <ClCompile Include="..\src\object\projectile.c" />
+    <ClCompile Include="..\src\object\projectile_arrow.c" />
+    <ClCompile Include="..\src\object\slash.c" />
+    <ClCompile Include="..\src\object\stairs.c" />
+    <ClCompile Include="..\src\object\starter_chest.c" />
+    <ClCompile Include="..\src\object\statue.c" />
+    <ClCompile Include="..\src\object\sword.c" />
+    <ClCompile Include="..\src\object\ticker.c" />
+    <ClCompile Include="..\src\object\zombie.c" />
+    <ClCompile Include="..\src\renderer\dialog.c" />
+    <ClCompile Include="..\src\renderer\entity.c" />
+    <ClCompile Include="..\src\renderer\renderer.c" />
+    <ClCompile Include="..\src\renderer\util.c" />
+    <ClCompile Include="..\src\rlone.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitignore" />
+    <None Include="..\.gitmodules" />
+    <None Include="..\BUILDING" />
+    <None Include="..\LICENSE" />
+    <None Include="..\README" />
+    <None Include="..\res\cfg\autorun.ini" />
+    <None Include="..\res\cfg\custom.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\tex\font.tga" />
+    <Image Include="..\res\tex\fossil_cave.tga" />
+    <Image Include="..\res\tex\icon.tga" />
+    <Image Include="icon1.ico" />
+    <Image Include="winicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="rlone.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\res\aud\bgm.wav" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1b1ab050-b9c2-4ab6-91f1-4f4dc82292c7}</ProjectGuid>
+    <RootNamespace>rlone</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <ExternalIncludePath>A:\DevLibs\SDL2_image-2.6.2\include;A:\DevLibs\SDL2_mixer-2.6.2\include;A:\DevLibs\SDL2-2.26.1\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>A:\DevLibs\SDL2_image-2.6.2\lib\x86;A:\DevLibs\SDL2_mixer-2.6.2\lib\x86;A:\DevLibs\SDL2-2.26.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <ExternalIncludePath>A:\DevLibs\SDL2_image-2.6.2\include;A:\DevLibs\SDL2_mixer-2.6.2\include;A:\DevLibs\SDL2-2.26.1\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>A:\DevLibs\SDL2_image-2.6.2\lib\x86;A:\DevLibs\SDL2_mixer-2.6.2\lib\x86;A:\DevLibs\SDL2-2.26.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <ExternalIncludePath>A:\DevLibs\SDL2_image-2.6.2\include;A:\DevLibs\SDL2_mixer-2.6.2\include;A:\DevLibs\SDL2-2.26.1\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>A:\DevLibs\SDL2_image-2.6.2\lib\x64;A:\DevLibs\SDL2_mixer-2.6.2\lib\x64;A:\DevLibs\SDL2-2.26.1\lib\x64;$(LibraryPath)</LibraryPath>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <ExternalIncludePath>A:\DevLibs\SDL2_image-2.6.2\include;A:\DevLibs\SDL2_mixer-2.6.2\include;A:\DevLibs\SDL2-2.26.1\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>A:\DevLibs\SDL2_image-2.6.2\lib\x64;A:\DevLibs\SDL2_mixer-2.6.2\lib\x64;A:\DevLibs\SDL2-2.26.1\lib\x64;$(LibraryPath)</LibraryPath>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VSN="1.0";DEBUG;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/I ..\include /I ..\iniparser\src %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VSN="1.0";NODEBUG;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/I ..\include /I ..\iniparser\src %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VSN="1.0";DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/I ..\include /I ..\iniparser\src %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VSN="1.0";NODEBUG;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/I ..\include /I ..\iniparser\src %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,3 @@
+[submodule "iniparser"]
+	path = iniparser
+	url = https://datascape.home.arpa/mirrors/iniparser.git

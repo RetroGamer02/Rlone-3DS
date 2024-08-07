@@ -1,0 +1,44 @@
+Rlone: A Rogue Clone
+====================
+You are an adventurer, of some kind.
+You found a dungeon to explore.
+Find as much gold as you can.
+Good luck.
+
+Rlone is a simple, ASCII rogue clone. Made mostly just as a fun project to try
+and get something complete that isn't just a game engine or framework.
+
+Dependencies
+============
+Rlone requires libSDL2, libSDL2_image, and libSDL2_mixer in order to function 
+properly. The corresponding development headers are also required for building.
+
+If you are not building from source, these will be installed via the provided
+"install.sh" script if you are on a supported OS.
+
+Configuration
+=============
+Rlone can be configured and customized to a fair extent, using the files in
+"res/cfg/". Unfortunately, key-binds are unable to be changed.
+
+Gameplay Details
+================
+The game operates using scaling map, mob, and loot generation, where as you 
+descend further through the dungeon, the larger, harder, and more plentiful
+each floor becomes. You, as the adventurer, also have no base stats, as your
+stats are fully determined by your weapons and armor. As a result, it's
+imperative that you check what you're about to pickup, as you can accidentally
+destroy your run by replacing a legendary sword with a common sword that only
+rolls 0s and 1s.
+
+The bottom row is your UI, with the rows above being a configurable amount of
+lines reserved to text updates for attack and damage rolls, loot pickups, etc.
+
+The bottom right is your equipped weapons, which indicates which attacks you
+are able to do.
+
+Controls are available in-game.
+
+Source Code
+===========
+Source code can be found at the following URL: https://junisoft.itch.io/rlone
